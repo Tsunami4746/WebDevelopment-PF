@@ -8,6 +8,10 @@ body {
   color: white !important;
   font-family: "Poppins", sans-serif !important;
 }
+header{
+  position: sticky;
+  top: 0;
+}
 nav {
   display: flex;
   justify-content: space-around;
@@ -107,12 +111,13 @@ font-size: 2rem;
   .card-column{
     flex-direction: column;
     align-items: center;
+    padding-top: 50px;
   }
   .card{
-    margin-top:100px ;
+    margin-top:80px ;
   }
   .card-column div:first-child{
-    margin-top: 10px;
+    margin-top: 0px;
   }
 }
 @media screen and (max-width: 480px) {
@@ -126,7 +131,6 @@ font-size: 2rem;
   body {
     width: 100%;
     min-width: 413px;
-    position: fixed;
   }
 }
 @media screen and (max-width: 800px) {
