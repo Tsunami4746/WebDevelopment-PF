@@ -1,0 +1,122 @@
+* {
+    margin: 0px;
+    padding: 0;
+  }
+  body {
+    background-color: #03254c;
+    color: white;
+    font-family: "Poppins", sans-serif;
+  }
+  nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 65px;
+    background-color: #0b4b83;
+  }
+  nav ul {
+    display: flex;
+    justify-content: center;
+  }
+  nav ul li {
+    list-style: none;
+    margin: 0 23px;
+  }
+  nav ul li a {
+    text-decoration: none;
+    color: white;
+  }
+  .left {
+    font-size: 1.5rem;
+  }
+  .left img {
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+    margin: -7px 10px;
+  }
+  .right ul li:hover {
+    text-decoration-line: underline;
+  }
+  nav ul li:hover {
+    color: rgb(233, 233, 233);
+    font-size: 1.2rem;
+  }
+ .buttons {
+    padding: 25px 50px;
+    display: flex;
+    justify-content: center;
+  }
+  .buttons a {
+    margin: 10px 35px;
+    margin-bottom: 0px;
+    padding: 5px 10px;
+  }
+  .github-logo{
+    margin: 10px 10px;
+    width: 80px;
+    height: 80px;
+  }
+  .discord-logo{
+    width: 100px;
+    height: 100px;
+  }
+  .Twitter{
+    margin: 10px 10px;
+    width: 80px;
+    height: 80px;
+    border-radius: 5px;
+  }
+  .content{
+    justify-content: center;
+    display: flex;
+    font-size: 1.3rem;
+    margin-top: 225px;
+  }
+
+  @media screen and (max-width: 900px) {
+    .right ul li {
+      margin: 0px 10px;
+    }
+  }
+
+
+  @media screen and (max-width: 480px) {
+    body {
+      width: 100%;
+      min-width: 480px;
+    }
+  }
+
+  
+  @media screen and (max-width: 413px) { 
+    /* For mobile */
+    body {
+      width: 100%;
+      min-width: 413px;
+      overflow: hidden;
+      position: fixed;
+    }
+    .content{
+      font-size: 1rem;
+    }
+}
+
+
+  @media screen and (max-width: 800px) {
+    body header nav {
+      flex-direction: column;
+      height: 100px;
+    }
+    .content{
+      justify-content: space-evenly;
+      text-align: center;
+      margin-top: 225px;
+    }
+    .buttons{
+      justify-content: space-evenly;
+    }
+    .buttons a {
+      margin: 0;
+    }
+  }

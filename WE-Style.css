@@ -1,0 +1,135 @@
+* {
+  margin: 0px;
+  padding: 0;
+}
+body {
+  width: 100%;
+  background-color: #03254c !important;
+  color: white !important;
+  font-family: "Poppins", sans-serif !important;
+}
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 65px;
+  background-color: #0b4b83;
+}
+nav ul {
+  display: flex;
+  justify-content: center;
+}
+nav ul li {
+  list-style: none;
+  margin: 0 23px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+.left {
+  font-size: 1.5rem;
+}
+.left img {
+  border-radius: 100%;
+  width: 30px;
+  height: 30px;
+  margin: -7px 10px;
+}
+.Info{
+  text-align: center;
+  margin-top: 200px;
+  font-size: 3rem;
+}
+.right ul li:hover {
+  text-decoration-line: underline;
+}
+nav ul li:hover {
+  color: rgb(233, 233, 233);
+  font-size: 1.2rem;
+}
+
+.Center{
+justify-content: center;
+display: flex;
+margin-top: 20rem;
+font-size: 2rem;
+}
+
+.card-column {
+  display: flex;
+  padding: 80px 30px;
+  justify-content: space-evenly;
+}
+
+.card  {    
+  box-shadow: 5px 0px 30px rgb(95, 95, 95);
+  background-color: rgb(245, 244, 244);
+  height: 250px;
+  width: 200px;
+  border-radius: 10px;
+  padding: 10px 10px;
+  margin-top: 15vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  
+}
+.card img{
+   width: 150px;
+   height: 150px;
+}
+#To-Do{
+  width: 200px;
+}
+.card a{
+  color: black;
+  text-decoration: none;
+}
+
+.folder {
+  margin-bottom: 40px;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 900px) {
+  .right ul li {
+    margin: 0px 10px;
+  }
+}
+@media screen and (max-width: 545px) {
+  .card-column{
+    flex-direction: column;
+    align-items: center;
+  }
+  .card{
+    margin-top:100px ;
+  }
+}
+@media screen and (max-width: 480px) {
+  body {
+    width: 100%;
+    min-width: 480px;
+  }
+}
+@media screen and (max-width: 413px) { 
+  /* For mobile */
+  body {
+    width: 100%;
+    min-width: 413px;
+    overflow: hidden;
+    position: fixed;
+  }
+}
+@media screen and (max-width: 800px) {
+  body header nav {
+    flex-direction: column;
+    height: 100px;
+  }
+  .card{
+    flex-direction: column;
+    align-items: center;
+    padding: 10PX;
+  }
+}
